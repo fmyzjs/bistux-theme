@@ -1,0 +1,22 @@
+## mako
+<%! from django.core.urlresolvers import reverse %>
+<%namespace name='static' file='/static_content.html'/>
+<%inherit file="/navigation.html"/>
+
+## TODO: this will eventually be moved to the Sass
+<%block name="navigation_logo">
+  <img src="${static.url('themes/bistux/images/carnegie_icon.png')}" height="50" alt="Home Page" />
+</%block>
+<%block name="navigation_link">#</%block>
+
+<%block name="register_link" />
+
+## We don't want extra links inside the navigation dropdown
+<%block name="navigation_dropdown_menu_links" />
+
+## When unauthenticated don't show links
+<%block name="navigation_global_links" />
+
+## When authenticated, show the find courses link
+<%block name="navigation_global_links_authenticated" />
+
