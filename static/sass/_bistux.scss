@@ -175,12 +175,12 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../images/forest_bg.jpg');
+$homepage-bg-image: '../themes/bistux/images/forest_bg.jpg';
 
 $login-banner-image: none;
 $register-banner-image: none;
 
-$video-thumb-url: url('../images/carnegie_thumb.png');
+$video-thumb-url: '../themes/bistux/images/carnegie_thumb.png';
 
 //-----------------
 //  Mixin Styles
